@@ -4,7 +4,7 @@ from random import choice
 from classes import BasicWord
 
 
-def get_random_word():
+def get_random_word() -> BasicWord:
     link = "https://jsonkeeper.com/b/CF86"
 
     response = requests.get(link).text
