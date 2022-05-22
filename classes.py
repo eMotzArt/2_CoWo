@@ -8,10 +8,9 @@ class BasicWord:
         return self.word
 
     # проверка на совпадение
+
     def is_match(self, word: str) -> bool:
-        if word in self.subwords_list:
-            return True
-        return False
+        return word in self.subwords_list
 
     # возвращает количество "подслов"
     def subwords_count(self) -> int:
@@ -38,6 +37,4 @@ class Player:
 
     # вернет true если пользователь уже угадал это слово
     def is_already_use(self, word: str) -> bool:
-        if word in self.accepted_words:
-            return True
-        return False
+        return word in self.accepted_words
